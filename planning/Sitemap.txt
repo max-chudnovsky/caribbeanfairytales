@@ -1,0 +1,35 @@
+
+Sitemap
+-------
+1. Home
+   - Hero Banner
+   - Featured Tours
+   - Upcoming Schedule
+   - Testimonials
+   - Newsletter signup
+
+2. Tours
+   - Tours Listing Page (filters, list/grid view)
+   - Tour Detail Page (description, itinerary, pricing, booking)
+
+3. Schedule
+   - Calendar view (month/week/day)
+   - Cruise liner integration
+
+4. Booking
+   - Booking form (customer details, payment)
+   - Confirmation page + QR ticket
+
+5. Customer Portal (optional)
+   - Login/Register
+   - My Bookings
+   - Download Tickets
+
+6. About Us
+   - Story, Team, Safety, Partners
+
+7. Contact
+   - Form, Contact details, Map
+
+8. Admin (backend)
+   - Trip management, Booking dashboard, Reports, Customer DB

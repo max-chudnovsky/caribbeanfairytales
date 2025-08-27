@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title: string;
+  isBlue?: boolean;
+}
+
+const { title, isBlue = false } = Astro.props;
+
+// Using the same photographer images as shown in the PDF
+const galleryImages = [
+  {
+    src: "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    alt: "Photographer at work"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
+    alt: "Photography session"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    alt: "Professional photographer"
+  }
+];
+---
+
+<section class={`py-16 ${isBlue ? 'bg-cyan-400' : 'bg-white'}`}>
+  <div class="container mx-auto px-4">
+    <h2 class={`text-4xl font-black mb-12 tracking-wider ${isBlue ? 'text-white' : 'text-black'}`}>
+      {title}
+    </h2>
+    
+    <div class="grid grid-cols-3 gap-8">
+      {galleryImages.map((image, _) => (
+        <div class="aspect-[4/5] overflow-hidden">
+          <img 
+            src={image.src} 
+            alt={image.alt}
+            class="w-full h-full object-cover hover:opacity-90 transition-opacity"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

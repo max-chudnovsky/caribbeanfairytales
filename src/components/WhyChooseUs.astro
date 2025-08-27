@@ -1,0 +1,71 @@
+---
+// Why Choose Us section
+const features = [
+  {
+    icon: "🛡️",
+    title: "Safety First",
+    description: "All tours are fully insured with certified safety equipment and trained professionals"
+  },
+  {
+    icon: "🏝️", 
+    title: "Local Guides",
+    description: "Experience authentic Dominican culture with our passionate local expert guides"
+  },
+  {
+    icon: "🚢",
+    title: "Cruise Friendly", 
+    description: "Perfectly timed tours that work with your cruise ship schedule - guaranteed return"
+  }
+];
+---
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-black text-black mb-4 tracking-wide">WHY CHOOSE US</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Your perfect Dominican adventure starts with the right tour company</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      {features.map((feature, _) => (
+        <div class="text-center group">
+          <!-- Icon -->
+          <div class="mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <div class="text-6xl mb-4">{feature.icon}</div>
+            <div class="w-16 h-1 bg-cyan-400 mx-auto rounded-full"></div>
+          </div>
+          
+          <!-- Content -->
+          <h3 class="text-2xl font-bold text-black mb-4 group-hover:text-cyan-600 transition-colors">
+            {feature.title}
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            {feature.description}
+          </p>
+        </div>
+      ))}
+    </div>
+    
+    <!-- Stats Row -->
+    <div class="mt-20 pt-16 border-t border-gray-100">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="group">
+          <div class="text-4xl font-black text-cyan-600 group-hover:text-orange-500 transition-colors">2500+</div>
+          <div class="text-gray-600 text-sm uppercase tracking-wide">Happy Guests</div>
+        </div>
+        <div class="group">
+          <div class="text-4xl font-black text-cyan-600 group-hover:text-orange-500 transition-colors">15+</div>
+          <div class="text-gray-600 text-sm uppercase tracking-wide">Tour Options</div>
+        </div>
+        <div class="group"> 
+          <div class="text-4xl font-black text-cyan-600 group-hover:text-orange-500 transition-colors">5</div>
+          <div class="text-gray-600 text-sm uppercase tracking-wide">Years Experience</div>
+        </div>
+        <div class="group">
+          <div class="text-4xl font-black text-cyan-600 group-hover:text-orange-500 transition-colors">100%</div>
+          <div class="text-gray-600 text-sm uppercase tracking-wide">Safety Record</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

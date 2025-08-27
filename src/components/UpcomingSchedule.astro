@@ -1,0 +1,90 @@
+---
+// Upcoming Schedule carousel component
+const upcomingTours = [
+  {
+    date: "Aug 28",
+    day: "Tomorrow",
+    tour: "Beach Paradise Tour",
+    time: "9:00 AM",
+    spotsLeft: 8,
+    price: 89.99
+  },
+  {
+    date: "Aug 29", 
+    day: "Thursday",
+    tour: "Colonial History Walk",
+    time: "2:00 PM", 
+    spotsLeft: 12,
+    price: 45.99
+  },
+  {
+    date: "Aug 30",
+    day: "Friday", 
+    tour: "Saona Island Adventure",
+    time: "8:00 AM",
+    spotsLeft: 5,
+    price: 129.99
+  },
+  {
+    date: "Sep 2",
+    day: "Monday",
+    tour: "Waterfall Hiking",
+    time: "7:00 AM",
+    spotsLeft: 15,
+    price: 75.99
+  }
+];
+---
+
+<section class="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-black text-black mb-4 tracking-wide">UPCOMING SCHEDULE</h2>
+      <p class="text-lg text-gray-600">Don't miss out on these amazing adventures</p>
+    </div>
+    
+    <!-- Schedule Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {upcomingTours.map((schedule, _) => (
+        <div class="bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <!-- Date Header -->
+          <div class="text-center mb-4 pb-4 border-b border-gray-100">
+            <div class="text-3xl font-black text-cyan-600">{schedule.date}</div>
+            <div class="text-sm text-gray-500 uppercase tracking-wide">{schedule.day}</div>
+          </div>
+          
+          <!-- Tour Info -->
+          <div class="mb-4">
+            <h3 class="font-bold text-black mb-2 leading-tight">{schedule.tour}</h3>
+            <div class="flex items-center text-gray-600 text-sm mb-2">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              {schedule.time}
+            </div>
+          </div>
+          
+          <!-- Availability -->
+          <div class="mb-4">
+            <div class={`text-sm font-semibold ${schedule.spotsLeft <= 5 ? 'text-red-600' : 'text-green-600'}`}>
+              {schedule.spotsLeft} spots left
+            </div>
+            <div class="text-lg font-bold text-orange-500">${schedule.price}</div>
+          </div>
+          
+          <!-- Quick Book Button -->
+          <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300">
+            Quick Book
+          </button>
+        </div>
+      ))}
+    </div>
+    
+    <!-- View Full Schedule -->
+    <div class="text-center mt-12">
+      <a href="/schedule" class="inline-block bg-cyan-400 hover:bg-cyan-500 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
+        View Full Schedule
+      </a>
+    </div>
+  </div>
+</section>

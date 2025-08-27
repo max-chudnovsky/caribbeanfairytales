@@ -1,0 +1,65 @@
+Wireframes (Text Layouts)
+------------------------
+
+Homepage
+--------
+[Logo + Nav: Home | Tours | Schedule | About Us | Contact | Book Now]
+
+[Hero Banner: Scenic image + "Explore Before You Sail!" + Book Now button]
+
+[Featured Tours Section: 3 cards in row]
+  - Image | Title | Duration | Price | "View Tour"
+
+[Upcoming Schedule (carousel)]
+  - Date + Tour Name + Quick Book button
+
+[Why Choose Us: Icons for Safety, Local Guides, Cruise Friendly]
+
+[Testimonials: 2-3 quotes]
+
+[Footer: Contact info | Social links | Newsletter signup]
+
+
+Tours Listing Page
+------------------
+[Page Title: "Our Tours"]
+[Filters: Date | Duration | Price | Theme]
+[Tour Cards Grid: Thumbnail, Name, Duration, Price, View Button]
+
+
+Tour Detail Page
+----------------
+[Banner Image]
+[Title + Tagline]
+[Description | Itinerary | Highlights | Reviews]
+[Sidebar: Price, Availability Calendar, Book Now button]
+
+
+Schedule Page
+-------------
+[Calendar View: Month/Week/List]
+[Filter by Tour]
+[Export to Google Calendar/iCal]
+
+
+Booking Page
+------------
+[Trip Name + Date]
+[Form: Name, Email, Phone, Guests, Payment Info]
+[Confirm & Pay button]
+[Confirmation Page: Thank you, Ticket QR, Email confirmation]
+
+
+About Us
+--------
+[Story + image]
+[Team Bios with photos]
+[Certifications + safety badges]
+[Partners logos]
+
+
+Contact Page
+------------
+[Form: Name, Email, Message]
+[Direct contact info: Phone, WhatsApp, Email]
+[Google Map pickup point]

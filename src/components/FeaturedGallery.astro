@@ -1,0 +1,35 @@
+---
+// Featured gallery exactly matching PDF - 4 images in a row
+const featuredImages = [
+  {
+    src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    alt: "Beach Adventure"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
+    alt: "Cultural Tour"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    alt: "Mountain Hiking"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    alt: "Water Activities"
+  }
+];
+---
+
+<section class="bg-cyan-400">
+  <div class="grid grid-cols-4 gap-0">
+    {featuredImages.map((image) => (
+      <div class="aspect-square overflow-hidden">
+        <img 
+          src={image.src} 
+          alt={image.alt}
+          class="w-full h-full object-cover hover:opacity-90 transition-opacity"
+        />
+      </div>
+    ))}
+  </div>
+</section>

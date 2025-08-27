@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import FeaturedGallery from '../components/FeaturedGallery.astro';
+import DestinationSection from '../components/DestinationSection.astro';
+---
+
+<Layout title="Caribbean Fairy Tale - Dominican Republic Tours">
+  <Header />
+  <Hero />
+  <FeaturedGallery />
+  <DestinationSection title="DESTINATION 1" />
+  <DestinationSection title="DESTINATION 2" isBlue={true} />
+</Layout>

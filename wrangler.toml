@@ -1,0 +1,15 @@
+name = "caribbeanfairytales"
+compatibility_date = "2024-03-01"
+main = "dist/_worker.js"
+
+# D1 Database configuration
+[[d1_databases]]
+binding = "DB"
+database_name = "caribbeanfairytales"
+database_id = "c5dd5b29-2527-4c21-9aec-b04f996db00f"
+
+[env.production]
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "caribbeanfairytales-prod"
+database_id = ""  # Will be populated for production database
